@@ -1,0 +1,38 @@
+.aside {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.aside__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.aside__item {
+  width: 270px;
+}
+
+.aside__caption {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
+
+.aside__subtitle {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--grey-txt-cl);
+}
+
+.aside__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--light-bg-cl);
+  height: 120px;
+}

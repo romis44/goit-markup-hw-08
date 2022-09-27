@@ -1,0 +1,40 @@
+.header {
+  background-color: var(--main-bg-cl);
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+  gap: 10px;
+  color: var(--grey-txt-cl);
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.header__list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  font-weight: 500;
+}
+
+.header__icon {
+  fill: currentColor;
+  stroke: var(--grey-txt-cl);
+  transition: fill var(--animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-bg-cl);
+  }
+}

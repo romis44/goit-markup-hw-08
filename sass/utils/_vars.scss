@@ -1,0 +1,31 @@
+:root {
+  --main-font: Roboto, sans-sefir;
+  --secondary-font: Raleway, sans-sefir;
+
+  --main-txt-cl: #212121;
+  --accent-txt-cl: #2196f3;
+  --logo-txt-cl: #000000;
+  --grey-txt-cl: #757575;
+  --light-txt-cl: #ffffff;
+  --dark-txt-cl: rgba(255, 255, 255, 0.6);
+
+  --main-icn-fill: #afb1b8;
+
+  --accent-bg-cl: #2196f3;
+  --secondary-bg-cl: #188ce8;
+  --main-bg-cl: #ffffff;
+  --dark-bg-cl: #2f303a;
+  --light-bg-cl: #f5f4fa;
+  --icon-bg-cl: rgba(255, 255, 255, 0.1);
+  --cust-bg-cl: #f5f5f5;
+
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --gap: 30px;
+
+  .page {
+    font-family: var(--main-font);
+    color: var(--main-txt-cl);
+    background-color: var(--main-bg-cl);
+  }
+}

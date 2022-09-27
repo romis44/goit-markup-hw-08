@@ -1,0 +1,33 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--accent-txt-cl);
+  text-decoration: none;
+}
+
+.logo__dark {
+  color: var(--logo-txt-cl);
+}
+
+.logo__light {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--light-txt-cl);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logo--header {
+  display: block;
+  padding: 24px 0;
+  margin-right: 93px;
+}
+
+.logo--footer {
+  display: block;
+  margin-bottom: 20px;
+}

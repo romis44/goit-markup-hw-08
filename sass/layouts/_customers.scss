@@ -1,0 +1,47 @@
+.customers {
+  padding: 94px 0;
+}
+
+.customers__list {
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 30px;
+  @include list(flex, var(--gap), null, wrap);
+}
+
+.customers__item {
+  @include item(5, var(--gap), 6);
+}
+
+.customers__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--main-txt-cl);
+  margin-bottom: 50px;
+}
+
+.customers__link {
+  display: flex;
+  border: 1px solid var(--main-icn-fill);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-icn-fill);
+
+  transition: border-color var(--animation), color var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: 1px solid var(--accent-bg-cl);
+    color: var(--accent-bg-cl);
+  }
+}
+
+.customers__icon {
+  fill: currentColor;
+}
