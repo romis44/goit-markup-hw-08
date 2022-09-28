@@ -228,11 +228,21 @@ img {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -953,7 +963,17 @@ img {
 }
 
 .customers {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .customers {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding: 94px 0;
+  }
 }
 
 .customers__list {
@@ -964,20 +984,47 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) {
+  .customers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: var(--gap);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .customers__item {
   -ms-flex-preferred-size: calc((100% - 5*var(--gap)) / 6);
       flex-basis: calc((100% - 5*var(--gap)) / 6);
 }
+@media screen and (min-width: 768px) {
+  .customers__item {
+    -ms-flex-preferred-size: calc((100% - 2*var(--gap)) / 3);
+        flex-basis: calc((100% - 2*var(--gap)) / 3);
+  }
+}
 
 .customers__title {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   color: var(--main-txt-cl);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .customers__link {
@@ -986,7 +1033,7 @@ img {
   display: flex;
   border: 1px solid var(--main-icn-fill);
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1001,6 +1048,21 @@ img {
 .customers__link:hover, .customers__link:focus {
   border-color: 1px solid var(--accent-bg-cl);
   color: var(--accent-bg-cl);
+}
+@media screen and (min-width: 768px) {
+  .customers__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .customers__icon {
