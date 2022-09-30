@@ -12,17 +12,17 @@
 
 .customers__list {
   @include list(flex, var(--gap), null, wrap);
-
-  @media screen and (min-width: 768px) {
-    @include list(flex, var(--gap), row, wrap);
-  }
 }
 
 .customers__item {
-  @include item(5, var(--gap), 6);
+  @include item(1, var(--gap), 2);
 
   @media screen and(min-width:768px) {
     @include item(2, var(--gap), 3);
+  }
+
+  @media screen and(min-width:1200px) {
+    @include item(5, var(--gap), 6);
   }
 }
 
@@ -46,7 +46,6 @@
   display: flex;
   border: 1px solid var(--main-icn-fill);
   border-radius: 4px;
-  width: 210px;
   height: 92px;
   align-items: center;
   justify-content: center;
@@ -61,13 +60,11 @@
   }
 
   @media screen and(min-width:768px) {
-    width: 226px;
     height: 92px;
   }
 
   @media screen and(min-width:1200px) {
     display: flex;
-    width: 170px;
     height: 92px;
   }
 }

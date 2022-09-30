@@ -17,7 +17,7 @@
 
 <body class="page">
     <!-- Навігація -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <a class="logo link logo--header" lang="en" href="/">Web<span class="logo__dark">Studio</span></a>
             <nav class="nav">
@@ -45,18 +45,23 @@
                         11 11
                     </a></li>
             </ul>
+            <button class="menu-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40">
+                    <use href="./images/icons/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+    </header>
     <main>
         <!-- Герой -->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
                 <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section> -->
+        </section>
         <!-- Наші переваги -->
-        <!-- <section class="aside">
+        <section class="aside">
             <div class="container">
                 <h2 class="aside__title visually-hidden">Наші плюси</h2>
                 <ul class="aside__list">
@@ -103,7 +108,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Наша робота -->
         <!-- <section class="preview">
             <div class="container">
@@ -358,7 +363,7 @@
         </section>
     </main>
     <!-- Наші контакти -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container container__footer">
             <div class="footer__group">
                 <a class="logo link logo--footer" lang="en" href="/"> Web<span class="logo__light">Studio</span></a>
@@ -422,7 +427,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -475,7 +480,25 @@
             </form>
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+                <use href="./images/icons/#icon-close_24"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+        </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -1,16 +1,27 @@
 .aside {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .aside__list {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .aside__item {
-  width: 270px;
+  @media screen and (min-width: 768px) {
+    @include item(1, var(--gap), 2);
+  }
+  @media screen and (min-width: 1200px) {
+    @include item(3, var(--gap), 4);
+  }
 }
 
 .aside__caption {
@@ -20,6 +31,8 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--main-txt-cl);
+  display: flex;
+  justify-content: center;
 }
 
 .aside__subtitle {

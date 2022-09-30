@@ -4,37 +4,59 @@
 }
 
 .header__container {
+  // display: none;
   display: flex;
 }
 
 .header__link {
-  display: flex;
-  align-items: center;
-  padding: 32px 0;
-  gap: 10px;
-  color: var(--grey-txt-cl);
-  transition: color var(--animation);
+  display: none;
 
-  &:hover,
-  &:focus {
-    color: var(--accent-txt-cl);
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: center;
+    // padding: 32px 0;
+    gap: 10px;
+    color: var(--grey-txt-cl);
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-txt-cl);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
   }
 }
 
 .header__list {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  font-weight: 500;
+  // display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    font-weight: 500;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .header__icon {
-  fill: currentColor;
-  stroke: var(--grey-txt-cl);
-  transition: fill var(--animation);
+  // display: none;
 
-  &:hover,
-  &:focus {
-    fill: var(--accent-bg-cl);
+  @media screen and(min-width:768px) {
+    fill: currentColor;
+    stroke: var(--grey-txt-cl);
+    transition: fill var(--animation);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-bg-cl);
+    }
   }
 }
