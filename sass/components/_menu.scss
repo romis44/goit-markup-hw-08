@@ -64,10 +64,12 @@
   right: 15px;
   border: none;
   background-color: transparent;
+}
 
-  &hover,
-  &focus {
-    color: var(--accent-txt-cl);
+.menu-close {
+  &:hover,
+  &:focus {
+    fill: var(--accent-txt-cl);
   }
 }
 
@@ -84,7 +86,7 @@
 
   &:hover,
   &:focus {
-    fill: var(--accent-txt-cl);
+    color: var(--accent-txt-cl);
   }
 }
 

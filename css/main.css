@@ -911,8 +911,9 @@ img {
   border: none;
   background-color: transparent;
 }
-.menu-togglehover, .menu-togglefocus {
-  color: var(--accent-txt-cl);
+
+.menu-close:hover, .menu-close:focus {
+  fill: var(--accent-txt-cl);
 }
 
 .mobile-list {
@@ -927,7 +928,7 @@ img {
   color: var(--main-txt-cl);
 }
 .mobile-list__link:hover, .mobile-list__link:focus {
-  fill: var(--accent-txt-cl);
+  color: var(--accent-txt-cl);
 }
 
 .mobile-menu__list {
@@ -1285,7 +1286,12 @@ img {
 
 .section-team {
   background-color: var(--light-bg-cl);
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding: 94px 0;
+  }
 }
 
 .section-team__caption {
@@ -1420,13 +1426,22 @@ img {
 
 .holder {
   margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .holder {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .holder__btn {
@@ -1488,7 +1503,12 @@ img {
 }
 
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
 }
 
 .portfolio-item__card {
