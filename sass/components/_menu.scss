@@ -16,6 +16,11 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-bg-cl);
+  }
 }
 
 .menu-container {
@@ -23,10 +28,13 @@
   top: 0;
   left: 0;
 
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
+  padding: 48px 40px;
 
-  background-color: #fff;
+  background-color: var(--main-bg-cl);
 
   transform: translateX(100%);
   transition: transform 400ms;
@@ -34,4 +42,106 @@
   &.is-open {
     transform: translateX(0);
   }
+}
+
+.mobile-socials {
+  display: flex;
+  margin-top: 64px;
+  // gap: 20px;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--accent-txt-cl);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+
+  &hover,
+  &focus {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.mobile-list {
+  margin-bottom: auto;
+}
+
+.mobile-list__link {
+  font-family: "Roboto";
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-txt-cl);
+  }
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-menu__tel {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.mobile-menu__mail {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.mobile-socials__thumb {
+  // display: flex;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+// .mobile-socials__thumb::after {
+//   content: "";
+//   display: block;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   // transform: rotate(90deg);
+//   margin-right: 10px;
+//   order: -1;
+//   flex-grow: 1;
+// }
+
+.mobile-socials__border {
+  // border: 1px solid transparent;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 0px 10px 0px 6px;
+}
+
+.mobile-socials__border:last-child {
+  border: 1px solid transparent;
 }

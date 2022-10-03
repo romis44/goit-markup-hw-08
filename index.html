@@ -110,7 +110,7 @@
             </div>
         </section>
         <!-- Наша робота -->
-        <!-- <section class="preview">
+        <section class="preview">
             <div class="container">
                 <h2 class="preview__title">Чим ми займаємося</h2>
                 <ul class="preview__list">
@@ -137,14 +137,22 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Команда -->
-        <!-- <section class="section-team">
+        <section class="section-team">
             <div class="container">
                 <h2 class="section-team__title">Наша команда</h2>
                 <ul class="section-team__list">
                     <li class="section-team__item">
-                        <img class="img" src="./images/ihor.jpg" alt="Ігор Дем'яненко" width=270>
+                        <img class="img" srcset="
+                        .images/team/img_lg-@1.jpg 270w,
+                        .images/team/img_md-@1.jpg 354w,
+                        .images/team/img_sm-@1.jpg 450w,
+                        .images/team/img_lg-@2.jpg 540w,
+                        .images/team/img_md-@2.jpg 708w,
+                        .images/team/img_sm-@2.jpg 900w, "
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                            src=".images/team/img_sm-@1.jpg 450w" alt="Ігор Дем'яненко" />
                         <div class="section-team__box">
                             <h3 class="section-team__caption">Ігор Дем'яненко</h3>
                             <p class="section-team__subtitle" lang="en">Product Designer</p>
@@ -310,7 +318,7 @@
 
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Постійні клієнти -->
         <section class="customers">
             <div class="container customers__container">
@@ -483,15 +491,27 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
             <svg width="40" height="40">
-                <use href="./images/icons/#icon-close_24"></use>
+                <use href="./images/icons/icons.svg#icon-close_40"></use>
             </svg>
         </button>
 
+        <ul class="mobile-list">
+            <li class="mobile-list__item"><a class="mobile-list__link link mobile-list__link--current"
+                    href="">Студія</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__link link " href="./portfolio.html">Портфоліо</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__link link" href="">Контакти</a></li>
+        </ul>
         <ul class="mobile-menu">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
+            <div class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__tel link">+38 096 111 11 11</a></li>
+                <li class="mobile-menu__item"><a href="" class="mobile-menu__mail link">info@devstudio.com</a></li>
+            </div>
+        </ul>
+        <ul class="mobile-socials">
+            <li class="mobile-socials__border"><a href="" class="mobile-socials__thumb link">Instagram</a></li>
+            <li class="mobile-socials__border"><a href="" class="mobile-socials__thumb link">Twitters</a></li>
+            <li class="mobile-socials__border"><a href="" class="mobile-socials__thumb link">Facebook</a></li>
+            <li class="mobile-socials__border"><a href="" class="mobile-socials__thumb link">LinkedIn</a></li>
         </ul>
     </div>
     <script src="./js/modal.js"></script>
