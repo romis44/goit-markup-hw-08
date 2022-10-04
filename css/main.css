@@ -1425,7 +1425,6 @@ img {
 }
 
 .holder {
-  margin-bottom: 50px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -1435,12 +1434,14 @@ img {
   gap: 8px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .holder {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
