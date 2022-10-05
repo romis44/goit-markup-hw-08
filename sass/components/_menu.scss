@@ -10,7 +10,6 @@
 
   background-color: transparent;
   border: none;
-
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
@@ -37,7 +36,7 @@
   background-color: var(--main-bg-cl);
 
   transform: translateX(100%);
-  transition: transform 400ms;
+  transition: var(--animation);
 
   &.is-open {
     transform: translateX(0);
@@ -47,10 +46,8 @@
 .mobile-socials {
   display: flex;
   margin-top: 64px;
-  // gap: 20px;
 
   font-family: "Roboto";
-  font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
@@ -98,48 +95,32 @@
 
 .mobile-menu__tel {
   font-family: "Roboto";
-  font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
-
+  line-height: calc(40 / 34);
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  color: var(--accent-txt-cl);
 }
 
 .mobile-menu__mail {
   font-family: "Roboto";
-  font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--grey-txt-cl);
 }
 
 .mobile-socials__thumb {
-  // display: flex;
   font-family: "Roboto";
   font-size: 18px;
   line-height: calc(22 / 18);
-
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  color: var(--accent-txt-cl);
 }
 
-// .mobile-socials__thumb::after {
-//   content: "";
-//   display: block;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   // transform: rotate(90deg);
-//   margin-right: 10px;
-//   order: -1;
-//   flex-grow: 1;
-// }
-
 .mobile-socials__border {
-  // border: 1px solid transparent;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding: 0px 10px 0px 6px;
 }

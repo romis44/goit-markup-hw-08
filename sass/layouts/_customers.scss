@@ -1,10 +1,6 @@
 .customers {
   padding: 60px 0;
 
-  @media screen and(min-width:768px) {
-    padding: 60px 0;
-  }
-
   @media screen and(min-width:1200px) {
     padding: 94px 0;
   }
@@ -57,15 +53,6 @@
   &:focus {
     border-color: 1px solid var(--accent-bg-cl);
     color: var(--accent-bg-cl);
-  }
-
-  @media screen and(min-width:768px) {
-    height: 92px;
-  }
-
-  @media screen and(min-width:1200px) {
-    display: flex;
-    height: 92px;
   }
 }
 
