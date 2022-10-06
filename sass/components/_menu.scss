@@ -45,6 +45,7 @@
 
 .mobile-socials {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
 
   font-family: "Roboto";
@@ -127,4 +128,8 @@
 
 .mobile-socials__border:last-child {
   border: 1px solid transparent;
+}
+
+.mobile-list__item:not(:last-child) {
+  margin-bottom: 35px;
 }
