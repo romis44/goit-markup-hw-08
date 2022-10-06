@@ -9,10 +9,12 @@
 }
 
 .aside__list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }
 
 .aside__item {
@@ -43,6 +45,15 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--grey-txt-cl);
+  margin-bottom: 30px;
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 0;
+  }
+}
+
+.aside__subtitle:last-child {
+  margin-bottom: 0;
 }
 
 .aside__img {
