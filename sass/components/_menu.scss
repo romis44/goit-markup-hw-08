@@ -82,6 +82,10 @@
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
 
+  &--current {
+    color: var(--accent-txt-cl);
+  }
+
   &:hover,
   &:focus {
     color: var(--accent-txt-cl);

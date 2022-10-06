@@ -4,10 +4,26 @@
   gap: 30px;
 }
 
+.portfolio-item {
+  width: 100%;
+
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
 .portfolio__box {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+
+  flex-grow: 1;
 }
 
 .portfolio__caption {
@@ -34,7 +50,8 @@
 }
 
 .portfolio-item__card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   transition: box-shadow var(--animation);
 
