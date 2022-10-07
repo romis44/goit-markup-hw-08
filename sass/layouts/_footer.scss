@@ -12,7 +12,6 @@
 }
 
 .footer__group {
-  margin-bottom: 60px;
   text-align: center;
 
   @media screen and (min-width: 1200px) {
@@ -35,10 +34,6 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
-
-  // @media screen and (min-width: 1200px) {
-  //   margin-bottom: 9px;
-  // }
 }
 
 .footer__item:not(:last-child) {
@@ -87,5 +82,18 @@
 
   @media screen and (min-width: 1200px) {
     display: block;
+  }
+}
+
+.footer-space {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: stretch;
+    margin-bottom: 60px;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }

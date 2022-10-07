@@ -18,9 +18,15 @@
 }
 
 .aside__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 768px) {
     @include item(1, var(--gap), 2);
+    margin-bottom: 0;
   }
+
   @media screen and (min-width: 1200px) {
     @include item(3, var(--gap), 4);
   }
@@ -45,15 +51,6 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--grey-txt-cl);
-  margin-bottom: 30px;
-
-  @media screen and(min-width:768px) {
-    margin-bottom: 0;
-  }
-}
-
-.aside__subtitle:last-child {
-  margin-bottom: 0;
 }
 
 .aside__img {

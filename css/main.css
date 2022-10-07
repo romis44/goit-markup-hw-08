@@ -517,7 +517,6 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 96%;
-  height: 98%;
   background-color: var(--main-bg-cl);
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -928,6 +927,7 @@ img {
 
 .mobile-list__link {
   font-family: "Roboto";
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
@@ -1185,10 +1185,17 @@ img {
   }
 }
 
+.aside__item {
+  margin-bottom: 30px;
+}
+.aside__item:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .aside__item {
     -ms-flex-preferred-size: calc((100% - 1*var(--gap)) / 2);
         flex-basis: calc((100% - 1*var(--gap)) / 2);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1224,16 +1231,6 @@ img {
   font-size: 14px;
   line-height: 1.7142857143;
   color: var(--grey-txt-cl);
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .aside__subtitle {
-    margin-bottom: 0;
-  }
-}
-
-.aside__subtitle:last-child {
-  margin-bottom: 0;
 }
 
 .aside__img {
@@ -1366,7 +1363,6 @@ img {
 }
 
 .section-team__box {
-  margin-bottom: 30px;
   padding: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1379,7 +1375,16 @@ img {
   }
 }
 
-.section-team__box:last-child {
+.section-team__item {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section-team__item {
+    margin-bottom: 0;
+  }
+}
+
+.section-team__item:last-child {
   margin-bottom: 0;
 }
 
@@ -1617,7 +1622,6 @@ img {
 }
 
 .footer__group {
-  margin-bottom: 60px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -1707,5 +1711,25 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__spitch {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-space {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    margin-bottom: 60px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-space {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=main.css.map */
