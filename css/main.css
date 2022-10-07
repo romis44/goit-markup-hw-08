@@ -378,7 +378,6 @@ img {
 @media screen and (min-width: 1200px) {
   .social__footer {
     margin-bottom: 0;
-    margin-right: 93px;
   }
 }
 
@@ -1733,7 +1732,8 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-space {
     margin-bottom: 0;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    width: auto;
+    padding: 0;
+    margin-right: 93px;
   }
 }/*# sourceMappingURL=main.css.map */
