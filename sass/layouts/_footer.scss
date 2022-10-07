@@ -88,12 +88,15 @@
 .footer-space {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
     margin-bottom: 60px;
     align-items: baseline;
+    width: 100%;
+    padding: 0 40px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
+    flex-wrap: nowrap;
   }
 }

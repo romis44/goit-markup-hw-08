@@ -1719,17 +1719,21 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 60px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    width: 100%;
+    padding: 0 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-space {
     margin-bottom: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }/*# sourceMappingURL=main.css.map */
