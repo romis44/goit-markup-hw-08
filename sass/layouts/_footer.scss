@@ -41,7 +41,7 @@
   // }
 }
 
-.footer__link.link:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 8px;
 
   @media screen and (min-width: 1200px) {
